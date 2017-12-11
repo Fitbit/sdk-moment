@@ -1,0 +1,57 @@
+
+.background             { x: 0;       y: 0;       width: 100%;     height: 100%; }
+.digital-clock          { x: 50%;     y: 50%-25;  width: 100%;     height: 100%; }
+.date-text              { x: 50%;     y: 50%+39;  width: 100%;     height: 100%; }
+
+.divider-top            { x: 50%-111; y: 50%;     width: 222;      height: 1;    }
+.divider-btm            { x: 50%-111; y: 50%+59;  width: 222;      height: 1;    }
+
+/* x: 50%-27; 
+x: 50%-114;
+*/
+.stat-cycler            {  y: 50%+68;  width: 138;      height: 48;   }
+.stat-widget-hr         {  y: 50%+68;  width: 84;       height: 48;   }
+.stat-text              { x: $+6;     y: 50%+10;                   height: 48;   }
+.stat-widget            { x: 0;       y: 0;       width: 100%;     height: 100%; }
+
+
+
+.digital-clock          { font-family: Colfax-Light; font-size: 105; text-anchor: middle; text-length: 10; }
+.date-text              { font-family: Seville;      font-size: 26;  text-anchor: middle; text-length: 32; }
+.stat-text              { font-family: SevilleSharp; font-size: 30;  text-anchor: start;  text-length: 16; }
+
+
+.stat-activity { x: 285; text-anchor: end }
+.stat-hr { x: 63; }
+
+.background-fill        { fill: +0000; }
+.foreground-fill        { fill: +FFFF; }
+.time-fill              { fill: +F929; }
+.date-fill              { fill: +FFFF; }
+.text-fill              { fill: +FFFF; }
+.icon-fill              { fill: +FFFF; }
+.icon-hr-fill           { fill: +F929; }
+.divider-fill           { fill: +8410; }
+
+.solid-display      { display: inline; }
+.gradient-display   { display: none;   }
+
+
+/* .background-fill    { fill: +FFFF; }
+.foreground-fill    { fill: +B440; }
+.time-fill          { fill: +FFFF; }
+.date-fill          { fill: +B440; }
+.text-fill          { fill: +B440; }
+.icon-fill          { fill: +B440; }
+.icon-hr-fill       { fill: +F929; }
+.divider-fill       { fill: +DE2F; }
+
+.time-fill          { gradient-color1: +E5EC;  gradient-color2: +C507; }
+.mask-fill          { fill: +FFFF; }
+
+.solid-display      { display: none;   }
+.gradient-display   { display: inline; } */
+
+
+
+

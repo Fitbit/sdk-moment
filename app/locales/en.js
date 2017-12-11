@@ -1,0 +1,2 @@
+export let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+export let months = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];

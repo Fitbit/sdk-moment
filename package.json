@@ -1,0 +1,17 @@
+{
+  "fitbit": {
+    "appType": "clockface",
+    "appDisplayName": "Moment JS",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Moment JS"
+      }
+    }
+  }
+}

@@ -4,30 +4,29 @@
   <rect class="divider divider-top" />
   <text id="txtDate" class="date-text">MON JANUARY 01</text>
   <rect class="divider divider-btm" />
-  
   <svg class="stats">
     <use id="iconHRM" href="#heart-beat" />
     <text id="txtHRM" class="stat-left" />
-    
-    <use id="stats-cycle" href="#cycleview" x="40%" y="0" width="60%" height="100%">
+
+    <use id="stats-cycle" href="#cycleview">
       <use href="#cycleview-item" class="cycle-item">
         <image href="images/steps.png" class="image" />
         <text class="stat-right" />
       </use>
       <use href="#cycleview-item" class="cycle-item">
-        <image href="images/calories.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <image href="images/calories.png" class="image" />
         <text class="stat-right" />
       </use>
       <use href="#cycleview-item" class="cycle-item">
-        <image href="images/distance.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <image href="images/distance.png" class="image" />
         <text class="stat-right" />
       </use>
       <use href="#cycleview-item" class="cycle-item">
-        <image href="images/floors.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <image href="images/floors.png" class="image" />
         <text class="stat-right" />
       </use>
       <use href="#cycleview-item" class="cycle-item">
-        <image href="images/active_minutes.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <image href="images/active_minutes.png" class="image" />
         <text class="stat-right" />
       </use>
     </use>

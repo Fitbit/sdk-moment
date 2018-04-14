@@ -1,4 +1,4 @@
-#background { 
+#background {
   x: 0;
   y: 0;
   width: 100%;
@@ -75,6 +75,13 @@
   x: 100%;
   width: 100%;
   text-anchor: end
+}
+
+#stats-cycle {
+  x: 40%;
+  y: 0;
+  width: 60%;
+  height: 100%; 
 }
 
 .cycle-item image {

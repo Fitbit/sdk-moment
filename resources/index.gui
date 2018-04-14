@@ -1,20 +1,36 @@
-<svg id="main-view" class="default-view theme1">
+<svg>
+  <rect id="background" />
+  <text id="txtTime" class="clock-text">13:37</text>
+  <rect class="divider divider-top" />
+  <text id="txtDate" class="date-text">MON JANUARY 01</text>
+  <rect class="divider divider-btm" />
+  
+  <svg class="stats">
+    <use id="iconHRM" href="#heart-beat" />
+    <text id="txtHRM" class="stat-left" />
+    
+    <use id="stats-cycle" href="#cycleview" x="40%" y="0" width="60%" height="100%">
+      <use href="#cycleview-item" class="cycle-item">
+        <image href="images/steps.png" class="image" />
+        <text class="stat-right" />
+      </use>
+      <use href="#cycleview-item" class="cycle-item">
+        <image href="images/calories.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <text class="stat-right" />
+      </use>
+      <use href="#cycleview-item" class="cycle-item">
+        <image href="images/distance.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <text class="stat-right" />
+      </use>
+      <use href="#cycleview-item" class="cycle-item">
+        <image href="images/floors.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <text class="stat-right" />
+      </use>
+      <use href="#cycleview-item" class="cycle-item">
+        <image href="images/active_minutes.png" x="50%" y="15" fill="white" width="24" height="24" />
+        <text class="stat-right" />
+      </use>
+    </use>
 
-  <rect class="background background-fill" />
-
-  <rect class="divider-top divider-fill" />
-  <rect class="divider-btm divider-fill" />
-
-  <text id="clockLabel" class="solid-display digital-clock time-fill">00:00</text>
-
-  <text id="dateLabel" class="date-text date-fill">XXX XXXXXXXX XX</text>
-
-  <svg class="stat-cycler foreground-fill">
-    <text id="statLabel" class="stat-text stat-activity" />
   </svg>
-
-  <svg class="stat-widget-hr foreground-fill">
-    <text id="hrmLabel" class="stat-text stat-hr" />
-  </svg>
-
 </svg>

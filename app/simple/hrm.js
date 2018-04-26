@@ -14,7 +14,7 @@ let heartRate;
 export function initialize(callback) {
   hrmCallback = callback;
   hrm = new HeartRateSensor();
-  hrm.start(); 
+  hrm.start();
   lastReading = hrm.timestamp;
   start();
 }

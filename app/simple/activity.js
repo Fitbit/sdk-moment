@@ -1,4 +1,4 @@
-/* 
+/*
   A simple way of returning activity data in the correct format based on user preferences.
   Callback should be used to update your UI.
 */

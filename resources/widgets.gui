@@ -1,20 +1,19 @@
 <svg>
   <defs>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="import" href="/mnt/sysassets/widgets_common.gui" /> 
-    
-    <link rel='import' href='/mnt/sysassets/widgets/baseview_widget.gui'/>
-    <link rel='import' href='/mnt/sysassets/widgets/cycleview_widget.gui'/>
-    
+    <link rel="import" href="/mnt/sysassets/widgets_common.gui" />
+    <link rel="import" href="/mnt/sysassets/widgets/baseview_widget.gui"/>
+    <link rel="import" href="/mnt/sysassets/widgets/cycleview_widget.gui"/>
     <symbol id="heart-beat">
       <g transform="translate(50%,50%)">
         <image id="icon" x="-50%" y="-50%" href="images/heart_solid.png" />
-        <animateTransform attributeName="transform" attributeType="scale" begin="highlight"
-                          end="unload;unhighlight" to="0.85" repeatCount="indefinite" final="keep" />
-        <animateTransform attributeName="transform" attributeType="scale" begin="highlight+0.433"
-                          end="unload;unhighlight" to="1.0" repeatCount="indefinite" final="keep" />
+        <animateTransform attributeName="transform" attributeType="scale"
+          begin="highlight" end="unload;unhighlight" to="0.85"
+          repeatCount="indefinite" final="keep" />
+        <animateTransform attributeName="transform" attributeType="scale"
+          begin="highlight+0.433" end="unload;unhighlight" to="1.0"
+          repeatCount="indefinite" final="keep" />
       </g>
     </symbol>
- 
   </defs>
 </svg>

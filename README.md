@@ -1,5 +1,12 @@
 # sdk-moment
 
-SDK version of the "Moment" clock face by Fitbit.
+SDK example version of the "Moment" clock face by Fitbit.
 
-![](screenshot.png)
+This is intended to be used as an example for building clock faces. Do not
+re-use the visual design.
+
+### Screenshots
+
+![](screenshots/Moment-Ionic.png)
+
+![](screenshots/Moment-Versa.png)

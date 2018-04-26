@@ -2,8 +2,6 @@
   "fitbit": {
     "appType": "clockface",
     "appDisplayName": "SDK Moment",
-    "iconFile": "resources/icon.png",
-    "wipeColor": "#f44336",
     "requestedPermissions": [
       "access_activity",
       "access_heart_rate",

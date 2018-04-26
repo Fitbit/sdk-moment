@@ -54,7 +54,7 @@
 
 .stats text {
   font-family: SevilleSharp;
-  font-size: 30; 
+  font-size: 30;
   text-length: 16;
   fill: #FFFFFF;
 }
@@ -81,7 +81,7 @@
   x: 40%;
   y: 0;
   width: 60%;
-  height: 100%; 
+  height: 100%;
 }
 
 .cycle-item image {

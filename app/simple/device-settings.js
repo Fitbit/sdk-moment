@@ -1,5 +1,6 @@
 /*
   Responsible for loading, applying and saving settings.
+  Requires companion/simple/companion-settings.js
   Callback should be used to update your UI.
 */
 import { me } from "appbit";
@@ -40,4 +41,3 @@ function loadSettings() {
 function saveSettings() {
   fs.writeFileSync(SETTINGS_FILE, settings, SETTINGS_TYPE);
 }
-

@@ -1,7 +1,6 @@
-/* 
+/*
   A simple clock which renders the current time and date in a digital format.
-
-  TODO: Date Format
+  Callback should be used to update your UI.
 */
 import clock from "clock";
 import { preferences } from "user-settings";

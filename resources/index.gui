@@ -7,7 +7,6 @@
   <svg class="stats">
     <use id="iconHRM" href="#heart-beat" />
     <text id="txtHRM" class="stat-left" />
-
     <use id="stats-cycle" href="#cycleview">
       <use href="#cycleview-item" class="cycle-item">
         <image href="images/steps.png" class="image" />
@@ -30,6 +29,5 @@
         <text class="stat-right" />
       </use>
     </use>
-
   </svg>
 </svg>

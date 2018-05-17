@@ -2,6 +2,7 @@
   A simple way of returning activity data in the correct format based on user preferences.
   Callback should be used to update your UI.
 */
+import { me } from "appbit";
 import clock from "clock";
 import { today, goals } from "user-activity";
 import { units } from "user-settings";
@@ -9,9 +10,20 @@ import { units } from "user-settings";
 let activityCallback;
 
 export function initialize(granularity, callback) {
-  clock.granularity = granularity;
-  clock.addEventListener("tick", tickHandler);
-  activityCallback = callback;
+  if (me.permissions.granted("access_activity")) {
+    clock.granularity = granularity;
+    clock.addEventListener("tick", tickHandler);
+    activityCallback = callback;
+  } else {
+    console.log("Denied User Activity permission");
+    callback({
+      steps: getDeniedStats(),
+      calories: getDeniedStats(),
+      distance: getDeniedStats(),
+      elevationGain: getDeniedStats(),
+      activeMinutes: getDeniedStats()
+    });
+  }
 }
 
 let activityData = {
@@ -68,5 +80,12 @@ function getSteps() {
   return {
     raw: val,
     pretty: val > 999 ? Math.floor(val/1000) + "," + ("00"+(val%1000)).slice(-3) : val
+  }
+}
+
+function getDeniedStats() {
+  return {
+    raw: 0,
+    pretty: "Denied"
   }
 }

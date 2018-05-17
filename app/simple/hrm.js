@@ -14,9 +14,8 @@ let heartRate;
 export function initialize(callback) {
   hrmCallback = callback;
   hrm = new HeartRateSensor();
-  hrm.start();
-  lastReading = hrm.timestamp;
   start();
+  lastReading = hrm.timestamp;
 }
 
 function getReading() {
@@ -43,12 +42,14 @@ display.addEventListener("change", function() {
 
 function start() {
   if (!watchID) {
+    hrm.start();
     getReading();
     watchID = setInterval(getReading, 1000);
   }
 }
 
 function stop() {
+  hrm.stop();
   clearInterval(watchID);
   watchID = null;
 }

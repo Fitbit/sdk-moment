@@ -35,7 +35,18 @@ let activityData = {
 }
 
 function tickHandler(evt) {
+  activityData = updateActivities();
   activityCallback(activityData);
+}
+
+let updateActivities = () => {
+  return {  
+    steps: getSteps(),
+    calories: getCalories(),
+    distance: getDistance(),
+    elevationGain: getElevationGain(),
+    activeMinutes: getActiveMinutes()
+  };  
 }
 
 function getActiveMinutes() {

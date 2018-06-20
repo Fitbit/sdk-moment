@@ -30,7 +30,6 @@ const colorSet = [
   {color: "slateblue"},
   {color: "purple"},
   {color: "fuchsia"},
-  {color: "purple"},
   {color: "plum"},
   {color: "orchid"},
   {color: "lavender"},

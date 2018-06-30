@@ -15,14 +15,12 @@ let imgHRM = iconHRM.getElementById("icon");
 let statsCycle = document.getElementById("stats-cycle");
 let statsCycleItems = statsCycle.getElementsByClassName("cycle-item");
 
-const GRANULARITY = "minutes";
-
 /* --------- CLOCK ---------- */
 function clockCallback(data) {
   txtTime.text = data.time;
   txtDate.text = data.date;
 }
-simpleClock.initialize(GRANULARITY, "longDate", clockCallback);
+simpleClock.initialize("minutes", "longDate", clockCallback);
 
 /* ------- ACTIVITY --------- */
 function activityCallback(data) {
@@ -34,7 +32,7 @@ function activityCallback(data) {
     img.x = txt.getBBox().x - txt.parent.getBBox().x - img.width - 7;
   });
 }
-simpleActivity.initialize(GRANULARITY, activityCallback);
+simpleActivity.initialize("seconds", activityCallback);
 
 /* -------- HRM ------------- */
 function hrmCallback(data) {

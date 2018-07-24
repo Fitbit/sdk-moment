@@ -26,16 +26,18 @@ export function initialize(granularity, callback) {
   }
 }
 
-let activityData = {
-  steps: getSteps(),
-  calories: getCalories(),
-  distance: getDistance(),
-  elevationGain: getElevationGain(),
-  activeMinutes: getActiveMinutes()
+let activityData = () => {
+  return {  
+    steps: getSteps(),
+    calories: getCalories(),
+    distance: getDistance(),
+    elevationGain: getElevationGain(),
+    activeMinutes: getActiveMinutes()
+  };  
 }
 
 function tickHandler(evt) {
-  activityCallback(activityData);
+  activityCallback(activityData());
 }
 
 function getActiveMinutes() {
